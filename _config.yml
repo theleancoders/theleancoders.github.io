@@ -6,7 +6,7 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: We build software
+description:
 
 # Author details for the jekyll-seo-tag gem
 author:
