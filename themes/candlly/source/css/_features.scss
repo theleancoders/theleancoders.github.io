@@ -1,0 +1,32 @@
+/* ============
+    Features
+===============*/
+.features-box {
+  margin-top: 40px;
+  .feature-icon {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 42px;
+    line-height: 80px;
+  }
+
+}
+
+.features-img-one {
+  img {
+    position: absolute;
+  }
+}
+
+.facts {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.features-alt {
+  p {
+    line-height: 28px;
+  }
+}

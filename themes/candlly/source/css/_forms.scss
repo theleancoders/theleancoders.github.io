@@ -1,0 +1,27 @@
+/* =============
+   Forms
+============= */
+
+.form-control {
+  border: 1px solid #ccc;
+  box-shadow: none !important;
+  border-radius: 2px;
+  height: 40px;
+
+  &:focus {
+    border-color: $dark;
+  }
+}
+
+.subscribe-alert {
+  line-height: 42px;
+  margin-bottom: 0;
+}
+
+.subscribe-alert.error {
+  color: $danger;
+}
+
+.subscribe-alert.valid {
+  color: $success;
+}

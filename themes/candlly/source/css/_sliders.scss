@@ -1,0 +1,69 @@
+/* ============
+    Sliders
+===============*/
+/* half slider */
+.owl-half-slider .owl-title {
+  width: 50%;
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.owl-half-slider .item {
+  min-height: 710px
+}
+
+.owl-half-slider .container {
+  min-height: 710px
+}
+
+.owl-pagination {
+  bottom: 30px;
+  display: block;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 100 !important;
+}
+
+.owl-page {
+  display: inline-block;
+  padding: 6px 5px;
+}
+
+.owl-page.active span {
+  border: none !important;
+  transform: none !important;
+  background: #fff !important;
+}
+
+.owl-page span {
+  width: 30px;
+  border-radius: inherit;
+  height: 3px;
+  background: rgba(255, 255, 255, .5);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+
+@media (max-width: 767px) {
+  .owl-half-slider .owl-item .item {
+    min-height: 400px;
+  }
+  .owl-half-slider .owl-item .container {
+    min-height: 400px;
+  }
+  .owl-half-slider .container {
+    min-height: 560px;
+  }
+}
+
+.owl-slider-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+}

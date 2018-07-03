@@ -1,0 +1,236 @@
+
+/* ============
+    Shop
+===============*/
+.product-list-item {
+  margin-bottom: 30px;
+
+  .product-img {
+    img {
+      transition: all .3s ease 0s;
+    }
+    &:hover {
+      img {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .product-info {
+    padding: 10px 0;
+  }
+}
+.rating {
+  ul {
+    margin-left: 0;
+    li{
+      padding: 0;
+      a {
+        color: $warning;
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+.slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  border: none;
+  outline: none;
+}
+
+.flex-control-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+
+.flex-direction-nav {
+  display: none;
+}
+
+.flexslider {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.flex-control-nav {
+  position: absolute;
+  z-index: 10;
+  right: 15px;
+  bottom: 15px;
+  margin: 0;
+  text-align: center;
+}
+
+.flex-control-nav li {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+}
+
+.flex-control-nav li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-indent: -9999px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.flex-control-nav li:hover a,
+.flex-control-nav li a.flex-active {
+  background-color: #fff;
+}
+
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-direction-nav {
+  *height: 0;
+}
+
+.flex-direction-nav a {
+  position: absolute;
+  z-index: 200;
+  top: 50%;
+  display: block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  margin: -40px 0 0;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-decoration: none;
+  color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, .9);
+  line-height: 40px;
+}
+
+.flex-direction-nav a:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.flex-direction-nav a:before {
+  display: block;
+  width: 40px;
+  content: "\F04D";
+  text-align: center;
+  color: $white;
+  font-family: "Material Design Icons";
+  font-size: 16px;
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: "\F054";
+}
+
+.flex-direction-nav .flex-prev {
+  left: 0;
+}
+
+.flex-direction-nav .flex-next {
+  right: 0;
+  text-align: right;
+}
+
+.product-slider-thumb .flex-control-thumbs {
+  position: relative;
+  z-index: 10;
+  top: 10px;
+  right: auto;
+  left: auto;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.product-slider-thumb .flex-control-thumbs li {
+  display: inline-block;
+  float: none;
+  width: 80px;
+  height: auto;
+  margin: 0 3px 0 0;
+  cursor: pointer;
+}
+
+.post-slider .flex-direction-nav,
+.product-slider-thumb .flex-direction-nav {
+  display: block;
+}
+.product-slider-thumb .flex-direction-nav .flex-prev,
+.product-slider-thumb .flex-direction-nav .flex-next {
+  opacity: 0;
+}
+
+.product-slider-thumb:hover .flex-direction-nav .flex-prev,
+.product-slider-thumb:hover .flex-direction-nav .flex-next {
+  opacity: 1;
+}
+
+.post-list-aside .post-img img {
+  border: 2px solid transparent;
+}
+.post-list-aside .post-img img {
+  width: 100%;
+  height: auto;
+}
+
+.post-list-aside .post-img img.flex-active {
+  border: 2px solid rgba(0, 0, 0, .8);
+}
+
+.post-slider .flex-control-thumbs {
+  display: none;
+}
+
+table.shopping-cart-table tr td, table.shopping-cart-table tr th {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev,
+  .product-slider-thumb .flex-direction-nav .flex-prev {
+    left: 0;
+    opacity: 1;
+  }
+  .flex-direction-nav .flex-next,
+  .product-slider-thumb .flex-direction-nav .flex-next {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+// Shop checkout
+.form-90 {
+  width: 90px;
+}

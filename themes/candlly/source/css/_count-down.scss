@@ -1,0 +1,35 @@
+/* ============
+    Count Down
+===============*/
+.lj-countdown {
+  color: $white;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.lj-countdown > * {
+  text-align: center;
+}
+
+.lj-countdown div {
+  display: inline-block;
+}
+
+.lj-countdown div span {
+  width: 150px;
+  display: block;
+}
+
+.lj-countdown div span:first-child {
+  height: 48px;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 48px;
+}
+
+.lj-countdown div span:last-child {
+  height: 25px;
+  font-size: 0.9em;
+  line-height: 25px;
+  color: #ffffff;
+}

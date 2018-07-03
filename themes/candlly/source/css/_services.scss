@@ -1,0 +1,29 @@
+/* =============
+   Services
+============= */
+
+.service-item {
+  margin-top: 30px;
+}
+
+.service-item i {
+  float: left;
+  font-size: 20px;
+  line-height: 42px;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  background-color: $custom;
+  color: $white;
+  border-radius: 2px;
+}
+
+.service-item .service-detail {
+  margin-left: 65px;
+}
+
+.service-box-img {
+  h4 {
+    margin: 20px 0;
+  }
+}

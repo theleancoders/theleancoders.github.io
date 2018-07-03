@@ -1,0 +1,75 @@
+/* ============
+    Footer
+===============*/
+
+.footer-map {
+  background-image: url('../images/world-map.png'); 
+  background-repeat: no-repeat;
+}
+
+.footer-one {
+  color: rgba($white, 0.7);
+
+  h5 {
+    color: $white;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .about-text {
+    padding-right: 10%;
+    line-height: 26px;
+    margin-top: 20px;
+  }
+  a {
+    color: rgba($white, 0.7);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: $white;
+    }
+  }
+  ul li {
+    margin: 5px 0;
+    line-height: 23px;
+  }
+}
+
+.footer-one-alt {
+  margin-top: 10px;
+  padding: 20px 0;
+  background-color: darken($dark, 5%);
+
+  .copyright {
+    line-height: 34px;
+  }
+}
+
+.footer-social-one {
+  font-size: 16px;
+
+  li {
+    padding: 0;
+    margin: 0 2px !important;
+  }
+
+  a {
+    border-radius: 50%;
+    text-align: center;
+    background-color: $dark;
+    width: 34px;
+    display: block;
+    height: 34px;
+    line-height: 36px;
+    font-size: 15px;
+
+    &:hover {
+      color: $white;
+      background-color: $custom;
+    }
+  }
+}
+

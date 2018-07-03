@@ -1,0 +1,60 @@
+/* ============
+    Clients
+===============*/
+.testimonial-description {
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 30px 30px 20px 30px;
+  position: relative;
+  background-color: #fafafa;
+  min-height: 150px;
+  border: 1px solid #eee;
+
+  &:after {
+    content: "";
+    bottom: -15px;
+    left: 50px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #fafafa;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  &:before {
+    content: "";
+    bottom: -17px;
+    left: 49px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 17px solid #eee;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+  }
+
+  p {
+    line-height: 26px;
+    font-size: 15px;
+    font-style: italic;
+  }
+}
+
+.testimonial-user-name {
+  margin-bottom: 0;
+}
+
+.testimonial-user-info {
+  padding-left: 30px;
+  margin-top: 35px;
+}
+
+.user-position {
+  font-weight: 400;
+  display: block;
+  font-size: 13px;
+}
+
+.client-logo {
+  padding: 20%;
+}

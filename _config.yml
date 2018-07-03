@@ -1,74 +1,87 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
 title: The Lean Coders
-url: "https://theleancoders.com"
-baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
-disqus_shortname:
+subtitle:
+description:
+keywords:
+author: The Lean Coders
+language: en
+timezone:
 
-# Default description in social shares for the jekyll-seo-tag gem
-description: We build software
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
 
-# Author details for the jekyll-seo-tag gem
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
-# Social details for the jekyll-seo-tag gem
-social:
-  name: The Lean Coders
-  links:
-    - https://github.com/theleancoders/theleancoders.github.io
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: blog
+  per_page: 2
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
 
-collections:
-  staff_members:
-    output: false
-  clients:
-    output: true
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
 
-paginate: 10
-paginate_path: "/blog/:num/"
-permalink: pretty
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 2
+pagination_dir: page
 
-jekyll-archives:
-  enabled:
-    - "categories"
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: candlly
 
-gems:
-  - "jekyll-feed"
-  - "jekyll-seo-tag"
-  - "jekyll-paginate"
-  - "jekyll-archives"
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
 
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "clients"
-    values:
-      layout: "client"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: "index.html"
-      type: "pages"
-    values:
-      layout: "default"
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
+node_sass:
+  debug: false
+  outputStyle: nested
+  precision: 5
+  sourceComments: false

@@ -1,0 +1,13 @@
+<% if (post.link) { %>
+  <a href="<%- url_for(post.link) %>" target="_blank" itemprop="url">
+      <h4 class="post-tile font-bold font-primary m-b-20"><%= post.title %></h4>
+  </a>
+<% } else if (post.title) { %>
+  <% if (index) { %>
+    <a href="<%- url_for(post.path) %>" target="_blank" itemprop="url">
+        <h4 class="post-tile font-bold font-primary m-b-20"><%= post.title %></h4>
+    </a>
+  <% } else { %>
+    <h4 class="post-tile font-bold font-primary m-b-20"><%= post.title %></h4>
+  <% } %>
+<% } %>

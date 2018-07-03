@@ -1,0 +1,50 @@
+
+/* ============
+    Core
+===============*/
+body {
+    font-family: $font-primary;
+    color: $dark;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+.container-fluid {
+  width: 90%;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $custom;
+}
+
+::selection {
+  color: $white;
+  background: $custom;
+}
+
+a{
+  text-decoration: none !important;
+  color: $dark;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $custom;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-secondary;
+}
+
+p {
+  line-height: 24px;
+}
+
+

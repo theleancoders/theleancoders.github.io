@@ -1,0 +1,42 @@
+<% var last;
+  site.posts.each(function(post, i) { %>
+    <%- partial('article', { post: post, index: true }) %>
+<% }); %>
+
+<% if (site.posts.length){ %>
+<div class="text-right">
+    <ul class="pagination pagination-split">
+        <% var prev_text = "&laquo; " + __('prev');var next_text = __('next') + " &raquo;"%>
+        <%- paginator({
+          prev_text: prev_text,
+          next_text: next_text
+        }) %>
+    </ul>
+</div>
+<% } %>
+
+<div class="text-right">
+    <ul class="pagination pagination-split">
+        <li class="disabled">
+            <a href="#"><i class="mdi mdi-chevron-left"></i></a>
+        </li>
+        <li>
+            <a href="#">1</a>
+        </li>
+        <li class="active">
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+        <li>
+            <a href="#">4</a>
+        </li>
+        <li>
+            <a href="#">5</a>
+        </li>
+        <li>
+            <a href="#"><i class="mdi mdi-chevron-right"></i></a>
+        </li>
+    </ul>
+</div>

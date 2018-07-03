@@ -1,0 +1,28 @@
+<div class="blog-boxed">
+  <div class="blog-post">
+    <%- partial('post/gallery') %>
+
+    <article class="post-body" itemscope itemprop="blogPost">
+        <div class="post-info">
+            <div class="post-dates">
+                <%- partial('post/date') %>
+                <%- partial('post/author') %>
+            </div>
+            
+            <%- partial('post/title') %>
+        </div>
+
+        <% if (post.excerpt) { %>
+          <p class="text-muted">
+              <%- post.excerpt %>
+          </p>
+          
+          <div class="text-right">
+              <a href="<%- url_for(post.path) %>#more" class="btn btn-sm btn-custom">Read more <i class="mdi mdi-arrow-right"></i></a>
+          </div>
+        <% } else { %>
+          <%- post.content %>
+        <% } %>
+    </article>
+  </div>
+</div>
