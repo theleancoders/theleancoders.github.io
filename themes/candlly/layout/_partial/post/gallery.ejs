@@ -1,26 +1,25 @@
 <% if(post.photos && post.photos.length) { %>
 <div class="post-media">
     <a href="<%- url_for(post.path) %>" rel="gallery_<%= post.id %>">
-      <% if(post.photos.length === 1) { %>
+    <% if(post.photos.length === 1) { %>
         <img src="<%- url_for(post.photos[0]) %>" class="img-responsive" itemprop="image">
-      <% } else { %>
+    <% } else { %>
         <div id="<%= post.id %>-slider" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <% post.photos.forEach(function(photo, i) { %>
-              <% let class = i === 0 ? 'active' : ''; %>
-              <li data-target="#<%= post.id %>-slider" data-slide-to="<%= i %>" class="<%= class %>"></li>
+            <ol class="carousel-indicators">
+            <% post.photos.each(function(photo, i) { %>
+                <% let cssClass = i === 0 ? 'active' : ''; %>
+                <li data-target="#<%= post.id %>-slider" data-slide-to="<%= i %>" class="<%= cssClass %>"></li>
             <% }); %>
-          </ol>
-    
-          <div class="carousel-inner">
-            <% post.photos.forEach(function(photo, i) { %>
-              <div class="item next active left">
-                  <img src="<%- url_for(photo) %>" alt="blog post with image" class="img-responsive">
-              </div>
-            <% }); %>
-          </div>
+            </ol>
         </div>
-      %< } %>
-    </a>
+
+        <div class="carousel-inner">
+        <% post.photos.each(function(photo, i) { %>
+            <div class="item next active left">
+                <img src="<%- url_for(photo) %>" alt="blog post with image" class="img-responsive">
+            </div>
+        <% }); %>
+        </div>
+    <% } %>
 </div>
 <% } %>
