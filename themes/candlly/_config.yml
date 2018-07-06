@@ -2,6 +2,7 @@ menu:
   Home: /
   Blog: /blog
   About: /about
+  Work: /work
   Contact: /contact
 
 # Sidebar
@@ -12,4 +13,6 @@ widgets:
 - text
 - recent_posts
 - tag
-- archive
+- newsletter
+
+show_count: true

@@ -4,7 +4,7 @@ excerpt: "Fugiat Lorem elit labore voluptate. Nisi non minim dolor voluptate qui
 date: 2018-07-04 00:02:06
 tags: Design Development
 categories:
-    - [ Design ]
+    - [ Design ] 
     - Development
     - Artificial Intelligence
 ---

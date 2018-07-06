@@ -8,7 +8,7 @@
             <a href=""><img src="images/blog/4.jpg" alt="" class="widget-posts-img"></a>
             <div class="widget-posts-descr">
                 <a href="#" title="" class="font-600 text-overflow"><%= post.title || '(no title)' %></a>
-                <div class="font-13 text-muted"><%= post.date %>><span class="slash-divider"> - </span> John Doe</div>
+                <div class="font-13 text-muted"><%= date(post.date, null) %><span class="slash-divider"> - </span> John Doe</div>
             </div>
         </li>
       <% }) %>

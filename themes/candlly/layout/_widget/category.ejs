@@ -1,21 +1,6 @@
 <% if (site.categories.length){ %>
-  <div class="widget-wrap">
-    <h3 class="widget-title"><%= __('categories') %></h3>
-    <div class="widget">
-      <%- list_categories({show_count: theme.show_count}) %>
-    </div>
-  </div>
-<% } %>
-
-
 <div class="p-t-50">
   <h4 class="font-italic m-t-0 m-b-20">Categories</h4>
-
-  <ul class="categories-list list-unstyled">
-      <li><a href="#">Web Design <span class="label label-default m-l-5">48</span></a></li>
-      <li><a href="#">Featured Blog <span class="label label-default m-l-5">25</span></a></li>
-      <li><a href="#">Photography Idea <span class="label label-default m-l-5">32</span></a></li>
-      <li><a href="#">News and Events <span class="label label-default m-l-5">40</span></a></li>
-      <li><a href="#">Arts and Entertainment <span class="label label-default m-l-5">28</span></a></li>
-  </ul>
+  <%- list_categories({show_count: theme.show_count, class: 'categories-list list-unstyled', count_class:'label label-default m-l-5'}) %>
 </div>
+<% } %>
