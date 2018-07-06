@@ -3,3 +3,13 @@ menu:
   Blog: /blog
   About: /about
   Contact: /contact
+
+# Sidebar
+sidebar: right
+widgets:
+- search
+- category
+- text
+- recent_posts
+- tag
+- archive
