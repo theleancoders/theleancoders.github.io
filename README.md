@@ -1,5 +1,12 @@
 # theleancoders.com website
 
+Pre-reqs 
+
+```
+> npm install -g hexo
+> npm install
+```
+
 For development
 
 ```
